@@ -1,0 +1,126 @@
+@font-face {
+    font-family: Fraunces;
+    src: url(fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+:root {
+    --veryDarkCyan: hsl(156, 42%, 18%);
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: var(--white);
+    max-width: 600px;
+    height: 450px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.content {
+    padding: 30px 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header p,
+.cost p {
+    font-family: Montserrat;
+    color: var(--darkGrayishBlue);
+}
+
+header>p:nth-child(1) {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .5em;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-family: Fraunces;
+    margin: 0 51px 24px 0;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+header>p:nth-child(3) {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6em;
+    margin-right: 25px;
+}
+
+.cost {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cost h1 {
+    color: var(--darkCyan);
+    font-family: Fraunces;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.cost p {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.button{
+    text-decoration: none;
+    background: var(--darkCyan);
+    color: var(--white);
+    width: 236px;
+    height: 48px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: Montserrat;;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.button:hover{
+    background-color: var(--veryDarkCyan);
+    transition: 0.5s;
+}
+
+.cart-icon{
+    width: 16px;
+    height: 16px;
+}
